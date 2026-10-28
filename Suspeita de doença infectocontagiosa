@@ -1,0 +1,14 @@
+nome=input("Digite seu nome: ")
+
+idade=input("Digite sua idade: ")
+
+doenca_infectocontagiosa=input("Suspeita de doença infectocontagiosa?").upper()
+
+if idade>="60" and doenca_infectocontagiosa== "SIM":
+    print("O paciente deve ser encaminhado para a sala de quarentena")
+elif idade<"60" and doenca_infectocontagiosa== "SIM":
+    print("O paciente deve ser encaminhado para a sala AZUL")
+elif idade>="60" and doenca_infectocontagiosa== "NÃO":
+    print("O paciente deve esperar na sala de espera")
+else:
+    print("Responda a suspeita de doença com SIM ou NÃO")
